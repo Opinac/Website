@@ -1,0 +1,9 @@
+body {
+    background-color: rgb(24, 24, 24);
+    color: #fff;
+}
+
+#navbar {
+    border: 1px dashed red;
+    height: 4rem;
+}
