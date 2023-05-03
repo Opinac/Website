@@ -11,12 +11,14 @@ if (auth(usr, psw) != null) {
   usrP.value = `${psw}`;
 }
 
-document.getElementById("primary-container").classList.remove("hidden");
-
 window.addEventListener("load", function() {
   document.getElementById("holder").classList.add("fade-in");
   document.getElementById("background").classList.add("fade-in");
   document.getElementById("social-buttons").classList.add("fade-in");
+  
+  setTimeout(function() {
+    document.getElementById("primary-container").classList.remove("hidden");
+  }, 300)
 });
 
 
