@@ -11,17 +11,6 @@ if (auth(usr, psw) != null) {
   usrP.value = `${psw}`;
 }
 
-window.addEventListener('unload', function() {
-document.getElementById("primary-container").classList.remove("hidden");
-document.getElementById("login-container").classList.add("hidden");
-document.getElementById("username").classList.remove("valid");
-document.getElementById("username").classList.remove("invalid");
-document.getElementById("password").classList.remove("valid");
-document.getElementById("password").classList.remove("invalid");
-document.getElementById("social-buttons").classList.add("fade-in");
-});
-
-
 window.addEventListener("load", function() {
   document.getElementById("holder").classList.add("fade-in");
   document.getElementById("background").classList.add("fade-in");
@@ -79,7 +68,18 @@ loginButton.addEventListener('click', function(event) {
       document.getElementById("social-buttons").classList.remove("fade-in");
 
       setTimeout(function() {
+        
+
+        document.getElementById("primary-container").classList.remove("hidden");
+        document.getElementById("login-container").classList.add("hidden");
+        document.getElementById("username").classList.remove("valid");
+        document.getElementById("username").classList.remove("invalid");
+        document.getElementById("password").classList.remove("valid");
+        document.getElementById("password").classList.remove("invalid");
+        document.getElementById("social-buttons").classList.add("fade-in");
+        
         window.location.href='../dashboard'
+        
       }, 300);
 
   
