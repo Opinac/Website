@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Opinac - Login</title></head
+  ><link rel="stylesheet" href="./meta/css/login.css" /><link rel="shortcut icon" href="./meta/img/opinac_logo_favi.png" type="image/x-icon">
+  <body>
+    <img src="./meta/img/bg.jpg" draggable="false" id="background" />
+    <div class="overlay">
+      <holder id="holder"
+        ><div id="primary-container">
+          <img
+            src="./meta/img/logo_prime.png"
+            id="logo"
+            draggable="false"
+          />
+          <h1 class="title">OPINAC</h1>
+          <button id="toggle-primary" class="toggle">Begin</button>
+        </div></holder
+      >
+      <div id="login-container" class="hidden">
+        <div id="login-email">
+          <form> <!-- Login Form -->
+            <h1>Login</h1>
+            <input
+              id="username"
+              type="text"
+              placeholder="Email"
+              autocomplete="off"
+            /><input
+              id="password"
+              type="password"
+              placeholder="Password"
+              autocomplete="off"
+            />
+            <div class="container-buttons">
+              <button id="login-button" class="enabled">Login</button
+              ><button id="register-button" class="disabled">Sign Up</button>
+            </div>
+            <h2>This website is closed to beta testers as of right now.</h2>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div id="social-buttons">
+      <button id="youtube-button" class="social-button">
+        <img
+          src="./meta/img/youtube-icon.png"
+          alt="YouTube"
+          draggable="false"
+        /></button
+      ><button id="instagram-button" class="social-button">
+        <img
+          src="./meta/img/instagram-icon.png"
+          alt="Instagram"
+          draggable="false"
+        /></button
+      ><button id="twitter-button" class="social-button">
+        <img
+          src="./meta/img/twitter-icon.png"
+          alt="Twitter"
+          draggable="false"
+        /></button
+      ><button id="tiktok-button" class="social-button">
+        <img
+          src="./meta/img/tiktok-icon.png"
+          alt="TikTok"
+          draggable="false"
+        />
+      </button>
+    </div>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+  <script src="./meta/js/login.js" type="module"></script>
+</html>
