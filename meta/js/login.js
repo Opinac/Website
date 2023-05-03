@@ -11,19 +11,14 @@ if (auth(usr, psw) != null) {
   usrP.value = `${psw}`;
 }
 
-
-
-//// reset values
+window.addEventListener('unload', function() {
 document.getElementById("primary-container").classList.remove("hidden");
 document.getElementById("login-container").classList.add("hidden");
 document.getElementById("username").classList.remove("valid");
 document.getElementById("username").classList.remove("invalid");
 document.getElementById("password").classList.remove("valid");
 document.getElementById("password").classList.remove("invalid");
-////
-
-
-
+});
 
 
 window.addEventListener("load", function() {
