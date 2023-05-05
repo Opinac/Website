@@ -27,11 +27,13 @@ const youtubeButton = document.getElementById("youtube-button");
 const instagramButton = document.getElementById("instagram-button");
 const twitterButton = document.getElementById("twitter-button");
 const tiktokButton = document.getElementById("tiktok-button");
+const shopButton = document.getElementById("shop-button");
 
 socialButton(youtubeButton, "https://www.youtube.com/@Opinac");
 socialButton(instagramButton, "https://www.instagram.com");
 socialButton(twitterButton, "https://twitter.com/Opinac_co");
 socialButton(tiktokButton, "https://www.tiktok.com/@Opinac");
+socialButton(shopButton, "https://store.opinac.com/");
 
 
 toggleButton.addEventListener('click', function(event) {
@@ -68,7 +70,6 @@ loginButton.addEventListener('click', function(event) {
       document.getElementById("social-buttons").classList.remove("fade-in");
 
       setTimeout(function() {
-        
 
         document.getElementById("primary-container").classList.remove("hidden");
         document.getElementById("login-container").classList.add("hidden");
@@ -81,7 +82,6 @@ loginButton.addEventListener('click', function(event) {
         window.location.href='../dashboard'
         
       }, 300);
-
   
     } else {
       {document.getElementById("username").classList.remove("valid");}
