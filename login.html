@@ -1,85 +1,37 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Opinac - Login</title></head
-  ><link rel="stylesheet" href="./meta/css/login.css" /><link rel="shortcut icon" href="./meta/img/opinac_logo_favi.png" type="image/x-icon">
-  <link rel="stylesheet" href="./meta/css/social-media.css" />
-  <body>
-    <img src="./meta/img/bg.jpg" draggable="false" id="background" />
-    <div class="overlay">
-      <holder id="holder"
-        ><div id="primary-container">
-          <img
-            src="./meta/img/logo_prime.png"
-            id="logo"
-            draggable="false"
-          />
-          <h1 class="title">OPINAC</h1>
-          <button id="toggle-primary" class="toggle">Login</button>
-        </div></holder
-      >
-      <div id="login-container" class="hidden">
-        <div id="login-email">
-          <form> <!-- Login Form -->
-            <h1>Login</h1>
-            <input
-              id="username"
-              type="text"
-              placeholder="Email"
-              autocomplete="off"
-            /><input
-              id="password"
-              type="password"
-              placeholder="Password"
-              autocomplete="off"
-            />
-            <div class="container-buttons">
-              <button id="login-button" class="enabled">Login</button
-              ><button id="register-button" class="disabled">Sign Up</button>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://cdn.discordapp.com/attachments/1138568255783571527/1163188812801900634/opinac_logo_favi.png?ex=653eaaff&is=652c35ff&hm=5496c45ba7dd8d635701f79221f510b91d7ed9687b0bf7473d81163515d1c28c&">
+    <title>Opinac - Login</title>
+    <link rel="stylesheet" href="./meta/ttf.css">
+    <link rel="stylesheet" href="./meta/login.css">
+ </head>
+<body>
+    <img class="background" draggable="false" src="https://cdn.discordapp.com/attachments/1138568747431514182/1138587536818704495/jxMRpS5.png"/>
+
+    <div class="login-container">
+            <div class="login-handler">
+                <h1>LOGIN</h1>
+                <h2>Are you a new user? <a href="../register/,.html" class="signup-txt">Sign up</a></h2>
+                <input type="email" class="input-info" placeholder="Email" id="email-input" required>
+                <input type="password" class="input-info" placeholder="Password" id="pass-input" required>
+                <button id="login-button">Login</button>
             </div>
-            <h2>This website is closed to beta testers as of right now.</h2>
-          </form>
-        </div>
-      </div>
+            <div class="misc-info" draggable="false">
+                <div class="version" onclick="window.open('https://www.opinac.com')">Last Updated 10/15/23</div>
+                <div class="status">This website is closed to beta testers as of right now.</div>
+            </div>
     </div>
-    <div id="social-buttons">
-      <button id="shop-button" class="social-button">
-        <img
-          src="./meta/img/shop-icon.png"
-          alt="Opinac Store"
-          draggable="false"
-        />
-      </button>
-      <button id="youtube-button" class="social-button">
-        <img
-          src="./meta/img/youtube-icon.png"
-          alt="YouTube"
-          draggable="false"
-        /></button
-      ><button id="instagram-button" class="social-button">
-        <img
-          src="./meta/img/instagram-icon.png"
-          alt="Instagram"
-          draggable="false"
-        /></button
-      ><button id="twitter-button" class="social-button">
-        <img
-          src="./meta/img/twitter-icon.png"
-          alt="Twitter"
-          draggable="false"
-        /></button
-      ><button id="tiktok-button" class="social-button">
-        <img
-          src="./meta/img/tiktok-icon.png"
-          alt="TikTok"
-          draggable="false"
-        />
-      </button>
 
-
-
+    <div class="social-button-container">
+        <button class="social-button" id="social-shop" onclick="window.open('https://store.opinac.com')"><img src="https://cdn.discordapp.com/attachments/1138568255783571527/1162931677593600040/shop-icon.png?ex=653dbb86&is=652b4686&hm=b8be655aca8ba4edaa3810f32ee609f89d6e783450fe18a7333f5a6062275cbf&" alt="" draggable="false"></button>
+        <button class="social-button" id="social-yt" onclick="window.open('https://www.youtube.com/@Opinac')"><img src="https://cdn.discordapp.com/attachments/1138568255783571527/1162935051999260672/youtube-icon.png?ex=653dbeaa&is=652b49aa&hm=1d8bc4a61f934d7a443bd49519c67c46d05c7c393a1137216e1ec0a782625648&" alt="" draggable="false"></button>
+        <button class="social-button" id="social-tt" onclick="window.open('https://www.tiktok.com/@opinac')"><img src="https://cdn.discordapp.com/attachments/1138568255783571527/1163139495365988493/tiktok-icon.png?ex=653e7d11&is=652c0811&hm=16f80db40646032e86be57c0425def25eb0e813571a0adfc3b27f46ba8a9785d&" alt="" draggable="false"></button>
+        <button class="social-button" id="social-ig" onclick="window.open('https://www.instagram.com/opinac_/')"><img src="https://cdn.discordapp.com/attachments/1138568255783571527/1163139483856797756/instagram-icon.png?ex=653e7d0f&is=652c080f&hm=a42d6e9d225e97b3244a05c5e37444f981a41e50853db257e61560f8a33c30be&" alt="" draggable="false"></button>
+        <button class="social-button" id="social-x" onclick="window.open('https://twitter.com/opinac_co')"><img src="https://cdn.discordapp.com/attachments/1138568255783571527/1163139940964642918/twitter-icon.png?ex=653e7d7c&is=652c087c&hm=f6042ba87b2566c0964de610d2dfbce97146794e6258e6476fcbd178ba92617f&" alt="" draggable="false"></button>
     </div>
-  </body>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
-  <script src="./meta/js/login.js" type="module"></script>
+
+</body>
 </html>
