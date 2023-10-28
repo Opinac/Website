@@ -1,5 +1,9 @@
 {
     "files.exclude": {
-        "login.html": true
+        "login.html": true,
+        "index.html": true,
+        "CNAME": true,
+        "work-in-progress.html": true,
+        "meta/work-in-progress.css": true
     }
 }
