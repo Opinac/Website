@@ -1,14 +1,128 @@
-:root {
-    --primary-color: #15161a;
-    --secondry-color: #4d90b6;
-    --accent-color: #4d70b6;
-    --font-color: #fff;
-}
-
-* {
-    margin: 0;
-}
-
 body {
-    background-color: var(--primary-color);
+    font-family: 'Montserrat Alternates', sans-serif;
+    background-color: #131313; /* Dark background */
+    color: #fff; /* Light text color */
+    margin: 0;
+    padding: 0;
 }
+
+header {
+    text-align: center;
+    background-color: transparent; /* Dark header background */
+    color: white;
+    padding: 20px;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 50px;
+    font-weight: lighter;
+    color: #fff; /* Light text color */
+}
+
+.filter {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product-card {
+    background-color: #333; /* Dark card background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s;
+    border: 1px solid #6d6d6d;
+    box-shadow: 0 0 10px #000;
+    border-radius: 10px;
+    user-select: none;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+
+
+.product-card:hover {
+    scale: 1.025;
+    border: 1px solid aqua;
+    box-shadow: 0 0 10px #76f6ff59;
+    background-color: rgba(0, 255, 255, 0.25);
+}
+
+.product-card h2 {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #fff; /* Light text color */
+}
+
+.product-card .colors {
+    display: flex;
+    align-items: center;
+    color: #fff; /* Text color */
+}
+
+.product-card .description {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    color: #fff; /* Text color */
+}
+
+
+
+
+.drop-filter {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+}
+
+
+
+.color-circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-left: 8px;
+    border: 1px solid #aaaaaa;
+}
+
+
+
+
+
+
+button {
+    background-color: #555; /* Dark button background */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #777; /* Slightly lighter on hover */
+}
+
+.white {background-color: white}
+.red {background-color: red}
+.black {background-color: black}
+.gray {background-color: gray }
+.navy { background-color: rgb(47, 47, 100) }

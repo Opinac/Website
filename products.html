@@ -3,22 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./meta/products.css">
-    <link rel="stylesheet" href="./meta/ttf.css">
-    <link rel="shortcut icon" href="https://cdn.discordapp.com/attachments/1138568255783571527/1167866359623974983/OPINAC_LOGO_1_BW.png?ex=654faf4e&is=653d3a4e&hm=2695df76b4a85deaee4db65573804359319c25efc3d55a81c976f04ce1dec164&">
-    <title>Opinac - Store</title>
+    <link rel="stylesheet" href="meta/ttf.css">
+    <link rel="stylesheet" href="meta/products.css">
+    <link rel="shortcut icon" href="https://cdn.discordapp.com/attachments/1138568255783571527/1167866359623974983/OPINAC_LOGO_1_BW.png?ex=654faf4e&is=653d3a4e&hm=2695df76b4a85deaee4db65573804359319c25efc3d55a81c976f04ce1dec164&" type="image/png">
+    <title>Opinac Store</title>
 </head>
 <body>
     <header>
-        
+        <h1><img src="https://cdn.discordapp.com/attachments/1138568255783571527/1167866359623974983/OPINAC_LOGO_1_BW.png?ex=654faf4e&is=653d3a4e&hm=2695df76b4a85deaee4db65573804359319c25efc3d55a81c976f04ce1dec164&" width="100px">Opinac Store</h1>
     </header>
+    
+    <div class="filter">
+        <label for="category">Filter by Category:</label>
+        <select id="category" class="drop-filter">
+            <option value="all">All</option>
+            <option value="electronics">Black & White</option>
+        </select>
+    </div>
 
-    <main>
+    <div class="product-container">
+        
 
-    </main>
+        <div class="product-card" onclick="location.href='./products/opinac-collection-2.html'">
+            <img src="https://cdn.discordapp.com/attachments/1167890417958793266/1167891370023846019/W_TRANSPARENT_BG.png?ex=654fc698&is=653d5198&hm=a7615fb6feb073f598e443691299750b1acca1bd9f2d548c2ded1d63b209b9c9&">
+            <h2>Opinac Black Hole Collection [#2]</h2>
+            <p>Deep space-like attire</p>
+            <p>Product Range: $5.99 - $59.99</p>
+        </div>
+        
+        <div class="product-card" onclick="location.href='./products/opinac-collection-1.html'">
+            <img src="https://cdn.discordapp.com/attachments/1138568255783571527/1167866359623974983/OPINAC_LOGO_1_BW.png?ex=654faf4e&is=653d3a4e&hm=2695df76b4a85deaee4db65573804359319c25efc3d55a81c976f04ce1dec164&">
+            <h2>Opinac Official Logo Collection [#1]</h2>
+            <p>The first of our listings</p>
+            <p>Product Range: $5.99 - $28.99</p>
+        </div>
 
-    <footer>
-
-    </footer>
+        
+    </div>
 </body>
 </html>
