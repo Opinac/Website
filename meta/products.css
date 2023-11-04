@@ -3,9 +3,12 @@
     -webkit-user-drag: none;
 }
 
+html {
+    background-color: #131313; /* Dark background */
+}
+
 body {
     font-family: 'Montserrat Alternates', sans-serif;
-    background-color: #131313; /* Dark background */
     color: #fff; /* Light text color */
     margin: 0;
     padding: 0;
@@ -118,6 +121,10 @@ a:hover {
     border: 1px solid #aaaaaa;
 }
 
+.important {
+    color: var(--important-color);
+    text-shadow: 0 0 10px var(--important-color);
+}
 
 button {
     background-color: #555; /* Dark button background */

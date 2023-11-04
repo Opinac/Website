@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+:root {
+    --primary-color: #15161a;
+    --secondry-color: #4d90b6;
+    --accent-color: #4d70b6;
+    --font-color: #fff;
+    --important-color: #ffaa4f;
+}
